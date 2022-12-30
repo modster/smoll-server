@@ -1,4 +1,4 @@
-const server = http.createServer();
-server.on('request', (request, response) => {
-  response.end('🍺')
-});
+const http = require('http');
+http.createServer().on('request', (request, response) => {
+  response.end('smoll server');
+}).listen(8080);
